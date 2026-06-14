@@ -10,8 +10,8 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:3000",
-        "https://vectorshift-assessment-pm2c-six.vercel.app/",  # your actual Vercel URL
-        "https://*.vercel.app",  # covers preview deployments too
+        "https://vectorshift-assessment-pm2c-six.vercel.app",
+        "https://*.vercel.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
