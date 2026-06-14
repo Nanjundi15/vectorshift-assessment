@@ -15,6 +15,10 @@
 
 <br/>
 
+[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Vercel-black?style=for-the-badge)](https://vectorshift-assessment-pm2c-six.vercel.app)
+[![Backend](https://img.shields.io/badge/⚙️_Backend-Render-46E3B7?style=for-the-badge)](https://vectorshift-assessment-1-pe2c.onrender.com)
+[![API Docs](https://img.shields.io/badge/📖_API_Docs-Swagger-85EA2D?style=for-the-badge)](https://vectorshift-assessment-1-pe2c.onrender.com/docs)
+
 [![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.110-009688?style=for-the-badge&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org)
@@ -328,16 +332,20 @@ curl.exe -X POST http://127.0.0.1:8000/pipelines/parse -H "Content-Type: applica
 
 | Service | Platform | URL |
 |---------|----------|-----|
-| Frontend | Vercel | `https://vectorshift-assessment.vercel.app` |
-| Backend | Render | `https://vectorshift-backend.onrender.com` |
-| API Docs | Render | `https://vectorshift-backend.onrender.com/docs` |
+| 🌐 Frontend | Vercel | [`vectorshift-assessment-pm2c-six.vercel.app`](https://vectorshift-assessment-pm2c-six.vercel.app) |
+| ⚙️ Backend | Render | [`vectorshift-assessment-1-pe2c.onrender.com`](https://vectorshift-assessment-1-pe2c.onrender.com) |
+| 📖 API Docs | Render | [`vectorshift-assessment-1-pe2c.onrender.com/docs`](https://vectorshift-assessment-1-pe2c.onrender.com/docs) |
 
 <br/>
 
-To connect your deployed frontend to the backend, add this environment variable in Vercel:
+> ⚠️ **Note:** The backend runs on Render's free tier and may take **30–60 seconds** to wake up after inactivity. Open the backend URL directly first if Submit Pipeline times out.
+
+<br/>
+
+To connect your deployed frontend to the backend, set this environment variable in Vercel:
 
 ```
-REACT_APP_API_BASE_URL = https://vectorshift-backend.onrender.com
+REACT_APP_API_BASE_URL = https://vectorshift-assessment-1-pe2c.onrender.com
 ```
 
 <br/>
