@@ -8,7 +8,11 @@ app = FastAPI(title="VectorShift Pipeline Backend")
 # Allow the React dev server to call this API during local development.
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[
+        "http://localhost:3000",
+        "https://vectorshift-assessment-pm2c-six.vercel.app/",  # your actual Vercel URL
+        "https://*.vercel.app",  # covers preview deployments too
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
